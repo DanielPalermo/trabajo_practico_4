@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+	<head>
+	
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximun-scale=1, user-scalable=no">
+		
+		<title>Insert title here</title>
+		
+		<link data-th-href="@{/webjars/bootstrap/css/bootstrap.min.css}" rel="stylesheet">
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+	</head>
+	<body>
+		    <header class="bg-primary text-white py-3">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-2">
+                    <img src="/img/logo.png" alt="Logotipo de la Facultad" class="img-thumbnail">
+                </div>
+                <div class="col-md-8">
+                    <h1 class="mb-0">Facultad de Ingeniería</h1>
+                    <p class="mb-0">Innovando para un futuro sostenible</p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Acerca de</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Carreras</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Noticias</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-3 bg-light py-5">
+                <h3 class="mb-3">Secciones</h3>
+                <ul class="list-unstyled">
+                    <li><a href="#">Biblioteca</a></li>
+                    <li><a href="#">Calendario académico</a></li>
+                </ul>
+            </div>
+            <div class="col-md-9 py-5">
+                <h2 class="mb-3">Bienvenidos a la Facultad de Ingeniería</h2>
+                <p>La Facultad de Ingeniería de la Universidad Nacional de Jujuy es una de las instituciones líderes en la formación de profesionales en el campo de la ingeniería. Nuestro compromiso es brindar una educación de excelencia que prepare a nuestros estudiantes para enfrentar los desafíos del mundo moderno.</p>
+                <h3 class="mt-5 mb-3">Noticias Recientes</h3>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="card mb-3">
+                            <div class="card-body">
+                                <h5 class="card-title">Nuevo laboratorio de robótica</h5>
+                                <p class="card-text">La Facultad de Ingeniería inaugura un moderno laboratorio de robótica para impulsar la investigación y el desarrollo en esta área.</p>
+                                <a href="#" class="btn btn-primary">Leer más</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="card mb-3">
+                            <div class="card-body">
+                                <h5 class="card-title">Charla sobre energías renovables</h5>
+                                <p class="card-text">Se llevará a cabo una charla informativa sobre las últimas tendencias en energías renovables y su aplicación en la ingeniería.</p>
+                                <a href="#" class="btn btn-primary">Leer más</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="bg-dark text-white py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <h5>Contacto</h5>
+                    <p>Dirección: Av. San Martín 1234, San Salvador de Jujuy, Jujuy</p>
+                    <p>Teléfono: +54 (388) 456-7890</p>
+                    <p>Email: info@facultad-ingenieria.edu.ar</p>
+                </div>
+                <div class="col-md-6 text-right">
+                    <h5>Síguenos en:</h5>
+                    <a href="#" class="text-white mr-3"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="text-white mr-3"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="text-white mr-3"><i class="fab fa-instagram"></i></a>
+                    <p class="mt-3">&copy; 2024 Facultad de Ingeniería. Todos los derechos reservados.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+		
+	
+		
+		<script type="text/javascript" data-th-src="@{/webjars/bootstrap/js/bootstrap.bundle.min.js}"></script>
+	
+	</body>
+</html>
