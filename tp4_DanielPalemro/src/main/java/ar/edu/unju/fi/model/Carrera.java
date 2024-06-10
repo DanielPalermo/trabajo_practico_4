@@ -1,10 +1,13 @@
 package ar.edu.unju.fi.model;
 
+import org.springframework.stereotype.Component;
+
+@Component
 public class Carrera {
-	int codigo;
-	String nombre;
-	int cant_anios;
-	boolean estado; //verdadero = aprobado, falso = desaprobado
+	private int codigo;
+	private String nombre;
+	private int cant_anios;
+	private boolean estado;
 	
 	public Carrera() {
 		// TODO Auto-generated constructor stub
