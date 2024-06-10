@@ -1,20 +1,23 @@
 package ar.edu.unju.fi.model;
 
+import org.springframework.beans.factory.annotation.Autowired;
 
 public class Materia {
-	int codigo;
-	String nombre;
-	int curso; //1ero, 2do, 3ero, (solo numeros)
-	int cant_horas;
-	boolean modalidad; //true= virtual | false = presencial
-	Docente docente;
-	Carrera carrera;
+	private int codigo;
+	private String nombre;
+	private int curso; //1ero, 2do, 3ero, (solo numeros)
+	private int cant_horas;
+	private Modalidad modalidad; //true= virtual | false = presencial
+	@Autowired
+	private Docente docente;
+	@Autowired
+	private Carrera carrera;
 	
 	public Materia() {
 		// TODO Auto-generated constructor stub
 	}
 
-	public Materia(int codigo, String nombre, int curso, int cant_horas, boolean modalidad, Docente docente,
+	public Materia(int codigo, String nombre, int curso, int cant_horas, Modalidad modalidad, Docente docente,
 			Carrera carrera) {
 		this.codigo = codigo;
 		this.nombre = nombre;
@@ -56,12 +59,12 @@ public class Materia {
 	public void setCant_horas(int cant_horas) {
 		this.cant_horas = cant_horas;
 	}
-
-	public boolean isModalidad() {
+	
+	public Modalidad getModalidad() {
 		return modalidad;
 	}
-
-	public void setModalidad(boolean modalidad) {
+	
+	public void setModalidad(Modalidad modalidad) {
 		this.modalidad = modalidad;
 	}
 
