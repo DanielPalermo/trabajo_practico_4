@@ -2,6 +2,9 @@ package ar.edu.unju.fi.model;
 
 import java.time.LocalDate;
 
+import org.springframework.stereotype.Component;
+
+@Component
 public class Alumno {
 	private int dni;
 	private String nombre;
@@ -9,23 +12,25 @@ public class Alumno {
 	private String email;
 	private int telefono;
 	private LocalDate fechaNac;
-	private int LU;
+	private int lu;
 	
 	
 	public Alumno() {
 		// TODO Auto-generated constructor stub
 	}
 
+	
 
-	public Alumno(int dni, String nombre, String apellido, String email, int telefono, LocalDate fechaNac, int lU) {
+	public Alumno(int dni, String nombre, String apellido, String email, int telefono, LocalDate fechaNac, int lu) {
 		this.dni = dni;
 		this.nombre = nombre;
 		this.apellido = apellido;
 		this.email = email;
 		this.telefono = telefono;
 		this.fechaNac = fechaNac;
-		LU = lU;
+		this.lu = lu;
 	}
+
 
 
 	public int getDni() {
@@ -88,25 +93,29 @@ public class Alumno {
 	}
 
 
-	public int getLU() {
-		return LU;
+
+	public int getLu() {
+		return lu;
 	}
 
 
-	public void setLU(int lU) {
-		LU = lU;
+
+	public void setLu(int lu) {
+		this.lu = lu;
 	}
+
 
 
 	@Override
 	public String toString() {
 		return "Alumno [dni=" + dni + ", nombre=" + nombre + ", apellido=" + apellido + ", email=" + email
-				+ ", telefono=" + telefono + ", fechaNac=" + fechaNac + ", LU=" + LU + ", getDni()=" + getDni()
-				+ ", getNombre()=" + getNombre() + ", getApellido()=" + getApellido() + ", getEmail()=" + getEmail()
-				+ ", getTelefono()=" + getTelefono() + ", getFechaNac()=" + getFechaNac() + ", getLU()=" + getLU()
-				+ ", getClass()=" + getClass() + ", hashCode()=" + hashCode() + ", toString()=" + super.toString()
-				+ "]";
+				+ ", telefono=" + telefono + ", fechaNac=" + fechaNac + ", lu=" + lu + "]";
 	}
+	
+	
+	
+
+
 	
 	
 	
