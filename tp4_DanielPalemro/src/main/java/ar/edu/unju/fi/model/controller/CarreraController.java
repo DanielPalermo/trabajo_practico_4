@@ -39,8 +39,8 @@ public class CarreraController {
 	}
 	
 	@PostMapping("/guardar")
-	public ModelAndView guardarCarrera(@ModelAttribute("carrera") Carrera carrera) {
-		ModelAndView modelView = new ModelAndView("carreras");
+	public ModelAndView guardarCarrera(@ModelAttribute("carrera") Carrera carrera) { //objeto
+		ModelAndView modelView = new ModelAndView("carreras"); //pagina html
 		String mensaje;
 		carrera.setEstado(true);
 		boolean exito = CollectionCarrera.agregarCarrera(carrera);
@@ -61,7 +61,7 @@ public class CarreraController {
 		boolean edicion = true;
 		carreraEncontrada = CollectionCarrera.buscarCarrera(codigo);
 		model.addAttribute("edicion", edicion);
-		model.addAttribute("carrera", carreraEncontrada);
+		model.addAttribute("carrera", carreraEncontrada); //objeto
 		model.addAttribute("titulo", "Modificar Carrera");
 		return "carrera";
 	}

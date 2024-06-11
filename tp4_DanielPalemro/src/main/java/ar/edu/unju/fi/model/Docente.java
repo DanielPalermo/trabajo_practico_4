@@ -1,11 +1,14 @@
 package ar.edu.unju.fi.model;
 
+import org.springframework.stereotype.Component;
+
+@Component
 public class Docente {
-	int legajo;
-	String nombre;
-	String apellido;
-	String email;
-	int telefono;
+	private int legajo;
+	private String nombre;
+	private String apellido;
+	private String email;
+	private int telefono;
 	
 	public Docente() {
 		// TODO Auto-generated constructor stub
