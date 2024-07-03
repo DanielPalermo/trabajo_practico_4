@@ -1,4 +1,4 @@
-package ar.edu.unju.fi.model.controller;
+package ar.edu.unju.fi.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;

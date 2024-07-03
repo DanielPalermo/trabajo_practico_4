@@ -1,4 +1,4 @@
-package ar.edu.unju.fi.model.controller;
+package ar.edu.unju.fi.controller;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
